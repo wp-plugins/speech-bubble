@@ -1,0 +1,374 @@
+@charset "UTF-8";
+
+/**
+* .sb-type-TYPE, .sb-type-TYPE > .sb-subtype-X:after
+*
+* コマ(アイコンと吹き出しをまとめたもの)部分
+* frame(speaker icon and name, serief) part
+*/
+
+.sb-type-ln-flat {
+	overflow: hidden;
+	padding: 10px 20px;
+	margin: 0;
+	ln-height: 1.5;
+	color: #333333;
+}
+
+.sb-type-ln-flat > .sb-subtype-a:after,
+.sb-type-ln-flat > .sb-subtype-b:after,
+.sb-type-ln-flat > .sb-subtype-c:after,
+.sb-type-ln-flat > .sb-subtype-d:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-speaker
+*
+* 話者領域      
+* Speaker Field 
+*/
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-speaker,
+.sb-type-ln-flat > .sb-subtype-c > .sb-speaker {
+	float: left;
+	position: relative;
+	margin-right: -70px;
+	width: 70px;
+}
+
+.sb-type-ln-flat > .sb-subtype-b > .sb-speaker,
+.sb-type-ln-flat > .sb-subtype-d > .sb-speaker {
+	float: right;
+	position: relative;
+	margin-left: -70px;
+	width: 70px;
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-speaker > .sb-icon
+*
+* 話者のアイコン部分
+* Speaker Icon part 
+*/
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-speaker > .sb-icon,
+.sb-type-ln-flat > .sb-subtype-b > .sb-speaker > .sb-icon,
+.sb-type-ln-flat > .sb-subtype-c > .sb-speaker > .sb-icon,
+.sb-type-ln-flat > .sb-subtype-d > .sb-speaker > .sb-icon {
+	text-align: center;
+	height: 60px;
+}
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-speaker > .sb-icon > img.sb-icon,
+.sb-type-ln-flat > .sb-subtype-b > .sb-speaker > .sb-icon > img.sb-icon,
+.sb-type-ln-flat > .sb-subtype-c > .sb-speaker > .sb-icon > img.sb-icon,
+.sb-type-ln-flat > .sb-subtype-d > .sb-speaker > .sb-icon > img.sb-icon {
+	border-style: none;
+	height: 60px;
+	width: 60px;
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-speaker > .sb-name
+*
+* 話者の名称部分   
+* Speaker name part
+*/
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-speaker > .sb-name,
+.sb-type-ln-flat > .sb-subtype-b > .sb-speaker > .sb-name,
+.sb-type-ln-flat > .sb-subtype-c > .sb-speaker > .sb-name,
+.sb-type-ln-flat > .sb-subtype-d > .sb-speaker > .sb-name {
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-speaker > .sb-name,
+.sb-type-ln-flat > .sb-subtype-c > .sb-speaker > .sb-name {
+	left: 80px;
+}
+
+.sb-type-ln-flat > .sb-subtype-b > .sb-speaker > .sb-name,
+.sb-type-ln-flat > .sb-subtype-d > .sb-speaker > .sb-name {
+	right: 80px;
+}
+
+
+
+/*----------------------------------------------------------------------------------*/
+/* ln-flatタイプの吹き出し                                                          */
+/* ln-flat Type   (For a,b)                                                         */
+/*----------------------------------------------------------------------------------*/
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content
+* .sb-type-TYPE > .sb-subtype-X > .sb-content:befor, :after
+*
+* セリフ&引き出し 部分 
+* Serief& Tail part    
+*/
+
+@media screen and (min-width:721px) {
+	.sb-type-ln-flat > .sb-subtype-a > .sb-content {
+		float: left;
+		position: relative;
+		padding-top: 26px;
+		margin-right: 80px;
+		margin-left: 80px;
+	}
+}
+
+@media screen and (max-width:720px) {
+	.sb-type-ln-flat > .sb-subtype-a > .sb-content {
+		float: left;
+		position: relative;
+		padding-top: 26px;
+		margin-left: 80px;
+	}
+}
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-content:before {
+	position: absolute;
+	top: 26px;
+	left: -8px;
+	z-index: 1;
+	height: 0;
+	width: 0;
+	border-style: solid none none solid;
+	border-width: 8px;
+	border-color: #EEEEEE transparent;
+	content: "";
+}
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-content:after {
+	position: absolute;
+	top: 27px;
+	left: -6px;
+	z-index: 3;
+	height: 0;
+	width: 0;
+	border-style: solid none none solid;
+	border-width: 8px;
+	border-color: #EEEEEE transparent;
+	content: "";
+}
+
+
+
+@media screen and (min-width:721px) {
+	.sb-type-ln-flat > .sb-subtype-b > .sb-content {
+		float: right;
+		position: relative;
+		padding-top: 26px;
+		margin-right: 80px;
+		margin-left: 80px;
+	}
+}
+
+@media screen and (max-width:720px) {
+	.sb-type-ln-flat > .sb-subtype-b > .sb-content {
+		float: right;
+		position: relative;
+		padding-top: 26px;
+		margin-right: 80px;
+	}
+}
+
+.sb-type-ln-flat > .sb-subtype-b > .sb-content:before {
+	position: absolute;
+	top: 26px;
+	right: -8px;
+	z-index: 1;
+	height: 0;
+	width: 0;
+	border-style: solid solid none none;
+	border-width: 8px;
+	border-color: #77DD66 transparent;
+	content: "";
+}
+
+.sb-type-ln-flat > .sb-subtype-b > .sb-content:after {
+	position: absolute;
+	top: 27px;
+	right: -6px;
+	z-index: 3;
+	height: 0;
+	width: 0;
+	border-style: solid solid none none;
+	border-width: 8px;
+	border-color: #77DD66 transparent;
+	content: "";
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content > .sb-speech-bubble
+*
+* 吹き出しの本体部分      
+* Speach bubble' body part
+*/
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-content > .sb-speech-bubble,
+.sb-type-ln-flat > .sb-subtype-b > .sb-content > .sb-speech-bubble {
+	position: relative;
+	z-index: 2;
+	padding: 6px 12px;
+	background-color: #EEEEEE;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #EEEEEE;
+	border-radius: 15px; 
+	color: #333333;
+}
+
+.sb-type-ln-flat > .sb-subtype-a > .sb-content > .sb-speech-bubble {
+	border-radius: 0 15px 15px 15px;
+}
+
+.sb-type-ln-flat > .sb-subtype-b > .sb-content > .sb-speech-bubble {
+	background-color: #77DD66;
+	border-color: #77DD66;
+	border-radius: 15px 0 15px 15px;
+}
+
+
+
+/*----------------------------------------------------------------------------------*/
+/* ln-flat用に調整した考えてるタイプの吹き出し                                      */
+/* ln-flat-Think Type   (For c,d)                                                   */
+/*----------------------------------------------------------------------------------*/
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content
+* .sb-type-TYPE > .sb-subtype-X > .sb-content:befor, :after
+*
+* セリフ&引き出し 部分 
+* Serief& Tail part    
+*/
+
+@media screen and (min-width:721px) {
+	.sb-type-ln-flat > .sb-subtype-c > .sb-content {   
+		float: left;
+		position: relative;
+		padding-top: 1.5em;
+		margin-left: 100px;
+		margin-right: 80px;
+	}
+}
+
+@media screen and (max-width:720px) {
+	.sb-type-ln-flat > .sb-subtype-c > .sb-content {
+		float: left;
+		position: relative;
+		padding-top: 1.5em;
+		margin-left: 100px;
+	}
+}
+
+.sb-type-ln-flat > .sb-subtype-c > .sb-content:before {
+	position: absolute;
+	top: 24px;
+	left: -17px;
+	height: 12px;
+	width:  12px;
+	background-color: #EEEEEE;
+	border:solid 1px #EEEEEE;
+	border-radius: 10px;
+	color: #333333;
+	content: "";    
+}
+
+.sb-type-ln-flat > .sb-subtype-c > .sb-content:after {
+	position: absolute;
+	top: 20px;
+	left: -28px;
+	height: 8px;
+	width:  8px;
+	background-color: #EEEEEE;
+	border:solid 1px #EEEEEE;
+	border-radius: 5px;
+	color: #333333;
+	content: "";
+}
+
+
+
+
+@media screen and (min-width:721px) {
+	.sb-type-ln-flat > .sb-subtype-d > .sb-content {
+		float: right;
+		position: relative;
+		padding-top: 1.5em;
+		margin-left: 80px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width:720px) {
+	.sb-type-ln-flat > .sb-subtype-d > .sb-content {
+		float: right;
+		position: relative;
+		padding-top: 1.5em;
+		margin-right: 100px;
+	}
+}
+
+.sb-type-ln-flat > .sb-subtype-d > .sb-content:before {
+	position: absolute;
+	top: 24px;
+	right: -17px;
+	height: 12px;
+	width:  12px;
+	background-color: #77DD66;
+	border: solid 1px #77DD66;
+	border-radius: 10px;
+	content: "";
+}
+
+.sb-type-ln-flat > .sb-subtype-d > .sb-content:after {
+	position: absolute;
+	top: 20px;
+	right: -27px;
+	height: 8px;
+	width:  8px;
+	background-color: #77DD66;
+	border: solid 1px #77DD66;
+	border-radius: 5px;
+	content: "";
+}
+
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content > .sb-speech-bubble
+*
+* 吹き出しの本体部分      
+* Speach bubble' body part
+*/
+
+.sb-type-ln-flat > .sb-subtype-c > .sb-content > .sb-speech-bubble,
+.sb-type-ln-flat > .sb-subtype-d > .sb-content > .sb-speech-bubble {
+	position: relative;
+	z-index: 2;
+	padding: 6px 12px;
+	background-color: #EEEEEE;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #EEEEEE;
+	border-radius: 15px;
+	color: #333333;
+}
+
+.sb-type-ln-flat > .sb-subtype-c > .sb-content > .sb-speech-bubble {
+	border-radius: 15px 15px 15px 15px;
+}
+
+.sb-type-ln-flat > .sb-subtype-d > .sb-content > .sb-speech-bubble {
+	background-color: #77DD66;
+	border-color: #77DD66;
+	border-radius: 15px 15px 15px 15px;
+}

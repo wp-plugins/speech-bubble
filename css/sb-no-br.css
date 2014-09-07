@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.sb-no-br br{
+display: none;
+}
+
+.sb-no-br p{
+margin: 0 0 0px
+}
+

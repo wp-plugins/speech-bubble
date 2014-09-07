@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+/**
+* .sb-type-TYPE, .sb-type-TYPE > .sb-subtype-X:after
+*
+* コマ(アイコンと吹き出しをまとめたもの)部分
+* frame(speaker icon and name, serief) part
+*/
+
+.sb-type-rtail {
+	overflow: hidden;
+	line-height: 1.5;
+	color: #333333;
+	padding: 5px 20px;
+	margin: 0;
+}
+
+.sb-type-rtail > .sb-subtype-a:after,
+.sb-type-rtail > .sb-subtype-b:after,
+.sb-type-rtail > .sb-subtype-c:after,
+.sb-type-rtail > .sb-subtype-d:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-speaker
+*
+* 話者領域      
+* Speaker Field 
+*/
+
+.sb-type-rtail > .sb-subtype-a > .sb-speaker,
+.sb-type-rtail > .sb-subtype-c > .sb-speaker {
+	float: left;
+	margin-right: -70px;
+	width: 70px;
+}
+
+.sb-type-rtail > .sb-subtype-b > .sb-speaker,
+.sb-type-rtail > .sb-subtype-d > .sb-speaker {
+	float: right;
+	margin-left: -70px;
+	width: 70px;
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-speaker > .sb-icon
+*
+* 話者のアイコン部分
+* Speaker Icon part 
+*/
+
+.sb-type-rtail > .sb-subtype-a > .sb-speaker > .sb-icon,
+.sb-type-rtail > .sb-subtype-b > .sb-speaker > .sb-icon,
+.sb-type-rtail > .sb-subtype-c > .sb-speaker > .sb-icon,
+.sb-type-rtail > .sb-subtype-d > .sb-speaker > .sb-icon {
+	text-align: center;
+	height: 60px;
+}
+
+.sb-type-rtail > .sb-subtype-a > .sb-speaker > .sb-icon > img.sb-icon,
+.sb-type-rtail > .sb-subtype-b > .sb-speaker > .sb-icon > img.sb-icon,
+.sb-type-rtail > .sb-subtype-c > .sb-speaker > .sb-icon > img.sb-icon,
+.sb-type-rtail > .sb-subtype-d > .sb-speaker > .sb-icon > img.sb-icon {
+	height: 60px;
+	width: 60px;
+	border-radius: 5px;
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-speaker > .sb-name
+*
+* 話者の名称部分   
+* Speaker name part
+*/
+
+.sb-type-rtail > .sb-subtype-a > .sb-speaker > .sb-name,
+.sb-type-rtail > .sb-subtype-b > .sb-speaker > .sb-name,
+.sb-type-rtail > .sb-subtype-c > .sb-speaker > .sb-name,
+.sb-type-rtail > .sb-subtype-d > .sb-speaker > .sb-name {
+	overflow: hidden;
+	font-size: 12px;
+	text-align: center;
+}
+
+
+
+/*----------------------------------------------------------------------------------*/
+/* rtailタイプの吹き出し                                                            */
+/* rtail Type   (For a,b)                                                         */
+/*----------------------------------------------------------------------------------*/
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content
+* .sb-type-TYPE > .sb-subtype-X > .sb-content:befor, :after
+*
+* セリフ&引き出し 部分 
+* Serief& Tail part    
+*/
+
+@media screen and (min-width:721px) {
+	.sb-type-rtail > .sb-subtype-a > .sb-content {
+		float: left;
+		position: relative;
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
+@media screen and (max-width:720px) {
+	.sb-type-rtail > .sb-subtype-a > .sb-content {
+		float: left;
+		position: relative;
+		margin-left: 80px;
+	}
+}
+
+.sb-type-rtail > .sb-subtype-a > .sb-content:before {
+	position: absolute;
+	top:  -5px;
+	left: -11px;
+	z-index: 1;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background: #4FDCE2;
+	content: "";
+}
+
+.sb-type-rtail > .sb-subtype-a > .sb-content:after {
+	position: absolute;
+	top:  -16px;
+	left: -15px;
+	z-index: 2;
+	height: 45px;
+	width: 57px;
+	border-radius: 15px;
+	background: #FFFFFF;
+	content: "";
+}
+
+@media screen and (min-width:721px)
+{
+	.sb-type-rtail > .sb-subtype-b > .sb-content {
+		float: right;
+		position: relative;
+		margin-right: 80px;
+		margin-left:  80px;
+	}
+}
+@media screen and (max-width:720px)
+{
+	.sb-type-rtail > .sb-subtype-b > .sb-content {
+		float: right;
+		position: relative;
+		margin-right: 80px;
+	}
+}
+.sb-type-rtail > .sb-subtype-b > .sb-content:before {
+	position: absolute;
+	top:  -5px;
+	right: -11px;
+	z-index: 1;
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background: #4FDCE2;
+	content: "";
+}
+
+.sb-type-rtail > .sb-subtype-b > .sb-content:after {
+	position: absolute;
+	top:  -16px;
+	right: -15px;
+	z-index: 2;
+	height: 45px;
+	width: 57px;
+	border-radius: 15px;
+	background: #FFFFFF;
+	content: "";
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content > .sb-speech-bubble
+*
+* 吹き出しの本体部分      
+* Speach bubble' body part
+*/
+
+.sb-type-rtail > .sb-subtype-a > .sb-content > .sb-speech-bubble,
+.sb-type-rtail > .sb-subtype-b > .sb-content > .sb-speech-bubble {
+	position: relative;
+	padding: 17px 11px;
+	z-index: 3;
+	background: #4FDCE2;
+	border-radius: 5px;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+/* rtail用に調整した考えてるタイプの吹き出し                                        */
+/* rtail-Think Type   (For c,d)                                                     */
+/*----------------------------------------------------------------------------------*/
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content
+* .sb-type-TYPE > .sb-subtype-X > .sb-content:befor, :after
+*
+* セリフ&引き出し 部分 
+* Serief& Tail part    
+*/
+
+@media screen and (min-width:721px) {
+	.sb-type-rtail > .sb-subtype-c > .sb-content {   
+		float: left;
+		position: relative;
+		padding-top: 14px;
+		margin-left: 100px;
+		margin-right: 80px;
+	}
+}
+
+@media screen and (max-width:720px) {
+	.sb-type-rtail > .sb-subtype-c > .sb-content {
+		float: left;
+		position: relative;
+		padding-top: 14px;
+		margin-left: 100px;
+	}
+}
+
+.sb-type-rtail > .sb-subtype-c > .sb-content:before {
+	position: absolute;
+	top: 24px;
+	left: -17px;
+	height: 14px;
+	width:  14px;
+	background-color: #4FDCE2;
+	border-color: #4FDCE2;
+	border-radius: 14px;
+	content: "";    
+}
+
+.sb-type-rtail > .sb-subtype-c > .sb-content:after {
+	position: absolute;
+	top: 20px;
+	left: -28px;
+	height: 9px;
+	width:  9px;
+	background-color: #4FDCE2;
+	border-color: #4FDCE2;
+	border-radius: 9px;
+	content: "";
+}
+
+
+
+@media screen and (min-width:721px)
+{
+	.sb-type-rtail > .sb-subtype-d > .sb-content {
+		float: right;
+		position: relative;
+		padding-top: 14px;
+		margin-left: 80px;
+		margin-right: 100px;
+	}
+}
+@media screen and (max-width:720px)
+{
+	.sb-type-rtail > .sb-subtype-d > .sb-content {
+		float: right;
+		position: relative;
+		padding-top: 14px;
+		margin-right: 100px;
+	}
+}
+.sb-type-rtail > .sb-subtype-d > .sb-content:before {
+	position: absolute;
+	top: 24px;
+	right: -17px;
+	height: 14px;
+	width:  14px;
+	background-color: #4FDCE2;
+	border-color: #4FDCE2;
+	border-radius: 14px;
+	content: "";
+}
+
+.sb-type-rtail > .sb-subtype-d > .sb-content:after {
+	position: absolute;
+	top: 20px;
+	right: -27px;
+	height: 9px;
+	width:  9px;
+	background-color: #4FDCE2;
+	border-color: #4FDCE2;
+	border-radius: 9px;
+	content: "";
+}
+
+/**
+* .sb-type-TYPE > .sb-subtype-X > .sb-content > .sb-speech-bubble
+*
+* 吹き出しの本体部分      
+* Speach bubble' body part
+*/
+
+.sb-type-rtail > .sb-subtype-c > .sb-content > .sb-speech-bubble,
+.sb-type-rtail > .sb-subtype-d > .sb-content > .sb-speech-bubble {
+	position: relative;
+	padding: 5px 10px;
+	z-index: 2;
+	background-color: #4FDCE2;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #4FDCE2;
+	border-radius: 4px;
+}
+
+.sb-type-rtail > .sb-subtype-d > .sb-content > .sb-speech-bubble {
+	background-color: #4FDCE2;
+	border-color: #4FDCE2;
+}

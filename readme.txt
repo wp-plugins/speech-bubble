@@ -1,5 +1,5 @@
 === Speech Bubble (吹き出しプラグイン) ===
-Contributors: snb arisoude-nakatta,mamoru fukuda
+Contributors: snb arisoude-nakatta,Mamoru Fukuda
 Tags:Speech Bubble Posts
 Requires at least: 3.7.1
 Tested up to: 3.7.1

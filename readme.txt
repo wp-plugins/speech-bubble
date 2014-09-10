@@ -25,7 +25,8 @@ You can easily add speech bubble ornament in your post, without direct HTML&CSS 
 </ul>
 
 [Example and How to use Page](http://www.arisoude-nakatta.com/wp-speech-bubble-plugin-toc-v-1-0-en/ "Example and How to use")
-[“ú–{Œêà–¾‚Æg—p—á](http://www.arisoude-nakatta.com/wp-speech-bubble-plugin-toc-v-1-0-jp/ "")
+
+[Japanse explanation](http://www.arisoude-nakatta.com/wp-speech-bubble-plugin-toc-v-1-0-jp/ "")
 
 == Installation ==
 

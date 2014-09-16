@@ -171,11 +171,14 @@ EOD;
 		$match_subtype = preg_replace( '/(\s|　)/', '' , $check_arguments );
 		$match_subtype = str_replace( array( '\r\n', '\n', '\r'), '', $match_subtype );
 			
-		//subtypeが存在するかを確認して，存在しなければsubtype_missingを入力
-		if( FALSE === in_array( $match_subtype, $this->sb_reg_subtype ) ) {
-			$match_subtype = self::SB_ALERT_SUBTYPE_MISSING;
-		}			
-
+			$check_res = array_key_exists( $match_subtype, $this->sb_asc_subtype );
+			
+			//subtypeが存在するかを確認して，存在しなければsubtype_missingを入力
+			if( TRUE === $check_res ) {
+				$match_subtype = $this->sb_asc_subtype[ $match_subtype ];
+			} elseif ( FALSE === $check_res ) {
+				$match_subtype = SB_ALERT_SUBTYPE_MISSING;
+			}			
 		return $match_subtype;
 	}	
 

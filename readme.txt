@@ -1,9 +1,9 @@
-=== Speech Bubble ===
-Contributors: snb arisoude-nakatta
-Tags: SpeechBubble Post
+=== Speech Bubble (吹き出しプラグイン) ===
+Contributors: snb arisoude-nakatta,Mamoru Fukuda
+Tags:Speech Bubble Posts
 Requires at least: 3.7.1
 Tested up to: 3.7.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,10 @@ You can easily add speech bubble ornament in your post, without direct HTML&CSS 
 <li>In a post, you can use same speach bubble more easily (Preset Type)</li>
 <li>Not support IE8</li>
 </ul>
+
+[Example and How to use Page](http://www.arisoude-nakatta.com/wp-speech-bubble-plugin-toc-v-1-0-en/ "Example and How to use")
+
+[Japanse explanation](http://www.arisoude-nakatta.com/wp-speech-bubble-plugin-toc-v-1-0-jp/ "")
 
 == Installation ==
 
@@ -179,6 +183,11 @@ THIRD(outside of shortcode)
 Make back up of added images by yourself.
 
 == Changelog ==
+
+= var 1.0.2 - Bug Fix =
+<ul>
+<li>subtype L1,R1,L2,R2 and left1, rigth1, left2, right2 were unavailable in single shortcode.</li>
+</ul>
 
 = var 1.0.0 - Newly created =
 <ul>

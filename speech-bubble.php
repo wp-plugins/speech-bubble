@@ -1,8 +1,9 @@
 <?php
 /*
-Plugin Name: Speech bubble
-Description: Speech bubble (ふきだしプラグイン) can easily add speech bubble ornament in your post, without direct HTML&CSS coding. ふきだしプラグインは簡単に記事にふきだしを追加することが可能です。ショートコードを用いるため直接的なHTMLとCSSのコーディングは不要です。
-Version: 1.0
+Plugin Name: Speech bubble (ふきだしプラグイン)
+Description: Speech bubble (ふきだしプラグイン) can easily add speech bubble ornament in your post, without direct HTML&CSS coding. 
+ふきだしプラグインは簡単に記事にふきだしを追加することが可能です。ショートコードを用いるため直接的なHTMLとCSSのコーディングは不要です。
+Version: 1.0.2
 Author: Masashi Sonobe, Mamoru Fukuda
 License: GPLv2 or later
 */

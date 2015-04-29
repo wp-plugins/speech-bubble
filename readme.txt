@@ -3,7 +3,7 @@ Contributors: snb arisoude-nakatta,Mamoru Fukuda
 Tags:Speech Bubble Posts
 Requires at least: 3.7.1
 Tested up to: 3.7.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -183,6 +183,12 @@ THIRD(outside of shortcode)
 Make back up of added images by yourself.
 
 == Changelog ==
+
+= var 1.0.3 - Bug Fix =
+<ul>
+<li>type: fb_flat bug fix. sb-type-fb-falt.css had a bug that "}" was missing in 294 line. reported by junon. Thanks! </li>
+</ul>
+
 
 = var 1.0.2 - Bug Fix =
 <ul>

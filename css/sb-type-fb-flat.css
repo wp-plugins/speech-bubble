@@ -291,7 +291,7 @@
 		padding-top: 14px;
 		margin-left: 80px;
 		margin-right: 100px;
-	
+	}
 }
 
 @media screen and (max-width:720px) {
@@ -302,6 +302,7 @@
 		margin-right: 100px;
 	}
 }
+
 .sb-type-fb-flat > .sb-subtype-d > .sb-content:before {
 	top: 24px;
 	right: -17px;

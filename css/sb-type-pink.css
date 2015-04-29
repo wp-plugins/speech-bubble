@@ -273,8 +273,7 @@
 
 
 
-@media screen and (min-width:721px)
-{
+@media screen and (min-width:721px) {
 	.sb-type-pink > .sb-subtype-d > .sb-content {
 		float: right;
 		position: relative;
@@ -283,8 +282,8 @@
 		margin-right: 100px;
 	}
 }
-@media screen and (max-width:720px)
-{
+
+@media screen and (max-width:720px) {
 	.sb-type-pink > .sb-subtype-d > .sb-content {
 		float: right;
 		position: relative;

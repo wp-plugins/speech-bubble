@@ -159,8 +159,7 @@
 }
 
 
-@media screen and (min-width:721px)
-{
+@media screen and (min-width:721px) {
 	.sb-type-think > .sb-subtype-b > .sb-content,
 	.sb-type-think > .sb-subtype-d > .sb-content {
 		float: right;
@@ -169,8 +168,8 @@
 		margin-left:  100px;
 	}
 }
-@media screen and (max-width:720px)
-{
+
+@media screen and (max-width:720px) {
 	.sb-type-think > .sb-subtype-b > .sb-content,
 	.sb-type-think > .sb-subtype-d > .sb-content {
 		float: right;
